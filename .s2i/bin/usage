@@ -1,0 +1,17 @@
+#!/bin/bash -e
+cat <<EOF
+This is a source-to-image builder that takes a git repository of
+data files and generates a single-node Minio service to serve them
+over S3.  It is intended for self-contained data processing demos
+and tutorials that require a flexible and straightforward way to
+deploy canned example data.  It is not intended for production use.
+
+To use it, install S2I: https://github.com/openshift/source-to-image
+
+The source repository should be a directory of directories, each of
+which will be published as a bucket.  To access the Minio service,
+run the resulting image and hit port 9000 on the container.  By default,
+the access key will be "username" and the secret key will be "password",
+but you can override these values by specifying MINIO_ACCESS_KEY and
+MINIO_SECRET_KEY environment variables.
+EOF
