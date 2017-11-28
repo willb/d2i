@@ -26,7 +26,7 @@ RUN echo "the quick brown fox jumps over the lazy dog" > /opt/minio/data/example
 
 COPY ./.s2i/bin/ /usr/libexec/s2i
 
-RUN chown -R 1001:1001 /opt/minio
+RUN chown -R 1001:1001 /opt/
 
 # This default user is created in the openshift/base-centos7 image
 USER 1001
