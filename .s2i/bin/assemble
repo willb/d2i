@@ -22,3 +22,4 @@ fi
 
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. /opt/minio/data/
+chmod 777 /opt/minio/data/
