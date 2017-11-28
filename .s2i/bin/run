@@ -8,4 +8,5 @@
 #
 
 cd /opt/minio/data
+export HOME=/opt/minio/data
 exec /opt/minio/minio server /opt/minio/data
