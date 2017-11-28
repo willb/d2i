@@ -7,6 +7,6 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-cd /opt/minio/data
-export HOME=/opt/minio/data
+cd /home/minio
+export HOME=/home/minio
 exec /opt/minio/minio server /opt/minio/data
